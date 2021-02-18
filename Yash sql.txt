@@ -1,0 +1,68 @@
+// PRODUCT TABLE
+
+create table Product (
+	pid int NOT NULL,
+	name varchar(10) NOT NULL,
+	shelflocation varchar(10),
+	costprice varchar(10),
+	mrp varchar(10),
+	manufacturer varchar(10)
+);
+
+insert into Product values(1000,'HalfCarat','Mumbai','500000','7000000','Forevermark');
+
+insert into Product values(1001,'CircleOfTrust','Delhi','300000','4500000','Forevermark');
+
+// CUSTOMER TABLE
+
+create table customer (
+	customer_id int NOT NULL,
+	name varchar(10) NOT NULL,
+	gender varchar(10),
+	Phonenumber varchar(10)
+);
+
+insert into customer values(2000,'Ram','Male','9856324567');
+
+insert into customer values(2001,'Vidya','Female','8967534721');
+
+
+// EMPLOYEE TABLE
+
+create table employee (
+	emp_id int NOT NULL,
+	name varchar(10) NOT NULL
+	gender varchar(10),
+	DOB varchar(10),
+	DOJ varchar(10),
+	Desg varchar(10)
+);
+
+insert into employee values(3000,'Ramesh','Male','23-JAN-2021','02-FEB-2021','Manager');
+
+insert into employee values(3001,'Kruti','Female','27-JAN-2021','07-FEB-2021','SalesPerson');
+
+
+// STORE TABLE
+
+create table store (
+	store_id int NOT NULL,
+	contact varchar(10),
+	address varchar(20)
+);
+
+insert into store values(4000,'9213227890','Hyderabad');
+
+insert into store values(4001,'8934215634','Pune');
+
+
+// BILL TABLE
+
+create table bill (
+	bill_no int NOT NULL,
+	DOP varchar(10)
+);
+
+insert into bill values(5000,'10-Jan-2021');
+
+insert into bill values(5001,'02-Feb-2021');
